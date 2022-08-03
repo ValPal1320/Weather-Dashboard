@@ -1,6 +1,7 @@
 # City Weather Dashboard
 
 ## Deployed Application
+https://valpal1320.github.io/Weather-Dashboard/
 
 ## Description
 * Enter in a city and search to view the current weather, temperature, humidity, wind speed, and UV Index for that city at the current time and date. Will also display the weather, temperature and hummidity forecast for the next five days.
