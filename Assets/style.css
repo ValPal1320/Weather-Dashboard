@@ -1,0 +1,33 @@
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 25px;
+}
+
+.list-group-item{
+    line-height: 0.5;
+    border: none;
+}
+
+.card-body{
+    flex: auto;
+}
+
+span.severe{
+    padding: 3px;
+    background-color: red;
+    color:white;
+}
+
+span.moderate{
+    padding: 3px;
+    background-color: yellow;
+}
+
+span.favorable{
+    padding: 3px;
+    background-color: green;
+    color:white;
+}

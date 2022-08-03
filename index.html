@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./Assets/style.css">
+
+</head>
+
+<body>
+
+    <header class="container-fluid text-center text-white bg-dark p-2">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-12 col-md-3 p-2 searchColumn">
+                <form class = "border p-2" id = "citySearchForm">
+                    <h4>Search for a City</h2>
+                    <input id="city" type = "text" autofocus = "true" class = "formInput"/>
+                    <button id="search-button" class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <div class = "pastSearch border" id = "pastSearchBtns"></div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class = "row border selectedCity" id = "currentWeather">
+                    <div class = "col-12">
+                        <h2 id="searchedCity"></h2>
+                        <div id = "currentWeatherContainer" class = "list-group"></div>
+                    </div>  
+                </div>
+                <div class = "row border" id = "fiveDayForecast">
+                        <h2 class= "col-12" id = "forecast"></h2>
+                        <div class = "d-flex" id = "fiveDayContainer"></div>
+                </div>  
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="./Assets/script.js"></script>
+
+</body>
+
+</html>
